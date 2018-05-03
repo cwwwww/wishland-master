@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Values from product flavor: platform_yh -->
+    <string name="AliUrl" translatable="false">www.yh66606.com</string>
+    <string name="AppName" translatable="false">银河娱乐城</string>
+    <string name="AppStyle" translatable="false">type1</string>
+    <string name="DomainCode" translatable="false">yh</string>
+    <string name="MainApplicationIDPath" translatable="false">com.yh.www</string>
+    <string name="VersionCode" translatable="false">3442fa5c7e81c54559583faf2d66432f</string>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_collection_game"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20px"
+    android:background="@drawable/ll_item_caipiao"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_game"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27px"
+        android:layout_marginTop="27px"
+        app:actualImageScaleType="fitCenter"
+        app:failureImage="@drawable/error"
+        app:failureImageScaleType="centerInside"
+        app:placeholderImage="@drawable/default_img"
+        app:placeholderImageScaleType="fitXY"
+        app:progressBarAutoRotateInterval="1500"
+        app:progressBarImage="@drawable/loading"
+        app:progressBarImageScaleType="centerInside"
+        app:retryImage="@drawable/reload"
+        app:retryImageScaleType="centerInside" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="真人视讯"
+            android:textColor="@color/text_color1"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_collect"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cb_collect"
+                android:layout_width="40px"
+                android:layout_height="35px"
+                android:background="@drawable/rb_collect_selector"
+                android:button="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+        <!--<CheckBox-->
+        <!--android:id="@+id/cb_collect"-->
+        <!--android:layout_width="40px"-->
+        <!--android:layout_height="35px"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="@drawable/rb_collect_selector"-->
+        <!--android:button="@null" />-->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_footView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="已经到底线了" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_footer"
+                android:background="@color/bt_bg_color1" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_footer"
+                android:background="@color/bt_bg_color1" />
+        </RelativeLayout>
+
+        <com.wishland.www.wanhaohui2.view.customlayout.VerticalSwipeRefreshLayout
+            android:id="@+id/refreshView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.wishland.www.wanhaohui2.view.customlayout.MyScrollView
+                android:id="@+id/sv_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/home_banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            app:circle_paddingbuttom="5dp"
+                            app:indicator_margin="8dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <com.wishland.www.wanhaohui2.view.customlayout.MarqueeTextView
+                                android:id="@+id/home_textvhiew_pmd"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:drawableLeft="@drawable/home_notice"
+                                android:drawablePadding="15dp"
+                                android:ellipsize="marquee"
+                                android:gravity="center_vertical"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:text="@string/banner_data"
+                                android:textColor="#808080"
+                                android:textSize="24px" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/ll_home_game"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@color/white" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_hot_game"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/icon_hot_game" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/hot_game"
+                                    android:textColor="@color/text_color6"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:descendantFocusability="blocksDescendants">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recycler_hot_game"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/white" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/ll_my_collection"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:animateLayoutChanges="true"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="12dp"
+                                        android:layout_marginRight="13dp"
+                                        android:layout_marginTop="10dp"
+                                        android:src="@drawable/collection_star" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="@string/my_collection"
+                                        android:textColor="@color/text_color6"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_edit"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical|right"
+                                        android:text="编辑" />
+                                </LinearLayout>
+                                <!--我的收藏-->
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:descendantFocusability="blocksDescendants">
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/my_collection"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@color/white" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_line_down_collection"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:id="@+id/iv_indicate_collection"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_margin="5dp"
+                                        android:src="@drawable/drop_down" />
+
+                                    <TextView
+                                        android:id="@+id/tv_indicate_collection"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="展开"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </com.wishland.www.wanhaohui2.view.customlayout.MyScrollView>
+        </com.wishland.www.wanhaohui2.view.customlayout.VerticalSwipeRefreshLayout>
+    </RelativeLayout>
+
+    <com.wishland.www.wanhaohui2.view.customlayout.EmptyLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_collection_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_game"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27px"
+            app:actualImageScaleType="fitCenter"
+            app:failureImage="@drawable/error"
+            app:failureImageScaleType="centerInside"
+            app:placeholderImage="@drawable/default_img"
+            app:placeholderImageScaleType="fitXY"
+            app:progressBarAutoRotateInterval="1500"
+            app:progressBarImage="@drawable/loading"
+            app:progressBarImageScaleType="centerInside"
+            app:retryImage="@drawable/reload"
+            app:retryImageScaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="真人视讯"
+            android:textColor="@color/text_color1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_delete" />
+    </LinearLayout>
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_delete"-->
+    <!--android:layout_width="16dp"-->
+    <!--android:layout_height="16dp"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:src="@drawable/icon_delete" />-->
+</FrameLayout>

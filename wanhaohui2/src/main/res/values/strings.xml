@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">万豪会</string>
+    <string name="home">首页</string>
+    <string name="discounts">优惠</string>
+    <string name="savings">存款</string>
+    <string name="line">额度转换</string>
+    <string name="mind">我的</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="hot_game">火热推荐</string>
+    <string name="register">点击注册</string>
+    <string name="login">点击登录</string>
+    <string name="attention1">1.请每次入款钱，请查看最新的入款账号，以免误转已停用账号而2造成您资金损失，如存入过期账户，我司则无法受理您的业务。</string>
+    <string name="attention2">2.汇款后请务必填写提交信息表格，以便财务系统能及时为您确认添加金额。</string>
+    <string name="attention3">3.跨行转账请您选择跨行快汇即可实时到账。</string>
+    <string name="banner_data">欢迎莅临VIP万濠会，感受无与伦比线上博彩乐趣；VIP万濠会7X24小时专业的客户服务，全天候处理相关事宜，严格训练的客服团队，以专业、亲切的态度，让每位玩家感到宾至如归！网银、支付宝、微信等等多元化充值方式，全新的充值方式，全新的服务理念，尽在VIP万濠会！各类丰富真人视讯、电子游艺、体育项目、彩票游戏，精彩无限！相信VIP万濠会，相信品牌的力量！</string>
+
+
+    <style name="mainradiobutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">25px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">6px</item>
+    </style>
+
+</resources>

@@ -1,0 +1,26 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.shellapp.h5shell.customview.MyWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="@style/mProgress_horizontal_webView"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone" />
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+

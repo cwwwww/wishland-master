@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40px">
+
+    <FrameLayout
+        android:id="@+id/fl_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView-->
+        <!--android:layout_width="300px"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/game_image" />-->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_e_game"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:actualImageScaleType="fitCenter"
+            app:failureImage="@drawable/error"
+            app:failureImageScaleType="centerInside"
+            app:placeholderImage="@drawable/default_img2"
+            app:placeholderImageScaleType="fitXY"
+            app:progressBarAutoRotateInterval="1500"
+            app:progressBarImage="@drawable/loading"
+            app:progressBarImageScaleType="centerInside"
+            app:retryImage="@drawable/reload"
+            app:retryImageScaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/icon_latest" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_game"
+        android:layout_marginTop="10px"
+        android:text="PT"
+        android:textColor="@color/text_color5" />
+
+    <TextView
+        android:id="@+id/tv_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_game"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@id/tv_name1"
+        android:text="黑暗的城市"
+        android:textColor="@color/text_color5" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignRight="@id/fl_game"-->
+        <!--android:layout_below="@id/fl_game"-->
+        <!--android:layout_marginLeft="60px"-->
+        <!--android:layout_marginTop="15px"-->
+        <!--android:layout_toRightOf="@id/tv_name2"-->
+        <!--android:src="@drawable/icon_fav_n" />-->
+
+</RelativeLayout>

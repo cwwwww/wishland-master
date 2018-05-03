@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10px"
+        android:orientation="vertical"
+        android:padding="20px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--流水号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:padding="10px">
+
+                <TextView
+                    android:id="@+id/funds_deal_item1_T"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:textColor="@color/text_color1"
+                    android:textSize="26px"
+                    android:text="第六"/>
+
+                <TextView
+                    android:id="@+id/funds_deal_item1_SR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color1"
+                    android:textSize="25px"
+                    android:text="第六届撒克己奉公的"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/funds_cath_deal_item_list">
+
+            <TextView
+                android:id="@+id/funds_deal_item2_T"
+                style="@style/funds_ATM_Money"
+                android:text="建档立卡时间啊"/>
+
+            <TextView
+                android:id="@+id/funds_deal_item2_SR"
+                style="@style/funds_ATM_Money_textid"
+                android:text="建档立卡时间啊"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/funds_cath_deal_item_list">
+
+            <TextView
+                android:id="@+id/funds_deal_item3_T"
+                style="@style/funds_ATM_Money"
+                android:text="建档立卡时间啊"/>
+
+            <TextView
+                android:id="@+id/funds_deal_item3_SR"
+                style="@style/funds_ATM_Money_textid"
+                android:text="建档立卡时间啊"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/funds_cath_deal_item_list">
+
+            <TextView
+                android:id="@+id/funds_deal_item4_T"
+                style="@style/funds_ATM_Money"
+                android:text="建档立卡时间啊"/>
+
+            <TextView
+                android:id="@+id/funds_deal_item4_SR"
+                style="@style/funds_ATM_Money_textid"
+                android:text="建档立卡时间啊"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/funds_cath_deal_item_list">
+
+            <TextView
+                android:id="@+id/funds_deal_item5_T"
+                style="@style/funds_ATM_Money"
+                android:text="建档立卡时间啊"/>
+
+            <TextView
+                android:id="@+id/funds_deal_item5_SR"
+                style="@style/funds_ATM_Money_textid"
+                android:text="建档立卡时间啊"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/funds_cath_deal_item_list">
+
+            <TextView
+                android:id="@+id/funds_deal_item6_T"
+                style="@style/funds_ATM_Money"
+                android:text="建档立卡时间啊"/>
+
+            <TextView
+                android:id="@+id/funds_deal_item6_SR"
+                style="@style/funds_ATM_Money_textid"
+                android:text="建档立卡时间啊"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/funds_deal_item7_Linear"
+            style="@style/funds_cath_deal_item_list">
+
+            <TextView
+                android:id="@+id/funds_deal_item7_T"
+                style="@style/funds_ATM_Money"
+                android:text="建档立卡时间啊"/>
+
+            <TextView
+                android:id="@+id/funds_deal_item7_SR"
+                style="@style/funds_ATM_Money_textid"
+                android:text="建档立卡时间啊"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</com.zhy.autolayout.AutoFrameLayout>

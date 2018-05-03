@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Values from product flavor: platform_whh2 -->
+    <string name="AliUrl" translatable="false">www.197790.com</string>
+    <string name="AliUrlsPool" translatable="false">www.197790.com,www.207723.com,www.209330.com</string>
+    <string name="AppName" translatable="false">万濠会</string>
+    <string name="AppStyle" translatable="false">type1</string>
+    <string name="DNS_ACCOUNT_ID" translatable="false">117278</string>
+    <string name="DomainCode" translatable="false">whh</string>
+    <string name="MainApplicationIDPath" translatable="false">com.wishland.www.wanhaohui2</string>
+    <string name="UMENG_APPKEY" translatable="false">5a1e735cf29d9856f200003e</string>
+    <string name="UMENG_CHANNEL_VALUE" translatable="false">XWHH</string>
+    <string name="UMENG_MESSAGE_SECRET" translatable="false">90f1c26e2d087e81070e35eeca4be68c</string>
+    <string name="UPDATE_Info" translatable="false">1. 优化域名速度</string>
+    <string name="UPDATE_URL" translatable="false">https://tpfw.083075.com/system/getAppLastChange</string>
+    <string name="VersionCode" translatable="false">1eb15ef31e446b10fa4809ea31a237b7</string>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/sdv_discount"-->
+        <!--android:layout_width="130px"-->
+        <!--android:layout_height="110px"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:actualImageScaleType="fitXY"-->
+        <!--app:failureImage="@drawable/error"-->
+        <!--app:failureImageScaleType="centerInside"-->
+        <!--app:placeholderImage="@drawable/default_img"-->
+        <!--app:placeholderImageScaleType="fitXY"-->
+        <!--app:progressBarAutoRotateInterval="1500"-->
+        <!--app:progressBarImage="@drawable/loading"-->
+        <!--app:progressBarImageScaleType="centerInside"-->
+        <!--app:retryImage="@drawable/reload"-->
+        <!--app:retryImageScaleType="centerInside" />-->
+        <ImageView
+            android:id="@+id/sdv_discount"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLines="1"
+                android:text="电子游艺，首存狂享300%"
+                android:textColor="@color/text_color1" />
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="优惠十足，时时有惊喜"
+                android:textColor="@color/text_color2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5px"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_game"
+                    android:layout_width="60px"
+                    android:layout_height="30px"
+                    android:background="@drawable/bg_card"
+                    android:gravity="center"
+                    android:text="电游"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="10px"
+                    android:src="@drawable/icon_time" />
+
+                <TextView
+                    android:id="@+id/tv_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="长期有效"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_more" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20px"
+        android:background="@color/text_hint" />
+</LinearLayout>

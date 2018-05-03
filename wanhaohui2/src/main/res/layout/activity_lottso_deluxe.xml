@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_game" />
+
+        <TextView
+            style="@style/text_middle_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="彩票平台" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_whh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_whh"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                app:actualImageScaleType="fitCenter"
+                app:failureImage="@drawable/error"
+                app:failureImageScaleType="centerInside"
+                app:placeholderImage="@drawable/default_img"
+                app:placeholderImageScaleType="fitXY"
+                app:progressBarAutoRotateInterval="1500"
+                app:progressBarImage="@drawable/loading"
+                app:progressBarImageScaleType="centerInside"
+                app:retryImage="@drawable/reload"
+                app:retryImageScaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_whh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="万豪彩票"
+                android:textColor="@color/text_color1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ig"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_ig"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                app:actualImageScaleType="fitCenter"
+                app:failureImage="@drawable/error"
+                app:failureImageScaleType="centerInside"
+                app:placeholderImage="@drawable/default_img"
+                app:placeholderImageScaleType="fitXY"
+                app:progressBarAutoRotateInterval="1500"
+                app:progressBarImage="@drawable/loading"
+                app:progressBarImageScaleType="centerInside"
+                app:retryImage="@drawable/reload"
+                app:retryImageScaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="IG彩票"
+                android:textColor="@color/text_color1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_vr"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                app:actualImageScaleType="fitCenter"
+                app:failureImage="@drawable/error"
+                app:failureImageScaleType="centerInside"
+                app:placeholderImage="@drawable/default_img"
+                app:placeholderImageScaleType="fitXY"
+                app:progressBarAutoRotateInterval="1500"
+                app:progressBarImage="@drawable/loading"
+                app:progressBarImageScaleType="centerInside"
+                app:retryImage="@drawable/reload"
+                app:retryImageScaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_vr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="VR彩票"
+                android:textColor="@color/text_color1" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_caipiao"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="40px"-->
+        <!--android:layout_marginTop="20px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/sdv_caipiao"-->
+        <!--android:layout_width="100px"-->
+        <!--android:layout_height="100px"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="27px"-->
+        <!--app:actualImageScaleType="fitCenter"-->
+        <!--app:failureImage="@drawable/error"-->
+        <!--app:failureImageScaleType="centerInside"-->
+        <!--app:placeholderImage="@drawable/default_img"-->
+        <!--app:placeholderImageScaleType="fitXY"-->
+        <!--app:progressBarAutoRotateInterval="1500"-->
+        <!--app:progressBarImage="@drawable/loading"-->
+        <!--app:progressBarImageScaleType="centerInside"-->
+        <!--app:retryImage="@drawable/reload"-->
+        <!--app:retryImageScaleType="centerInside" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_caipiao"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10px"-->
+        <!--android:text="彩票游戏"-->
+        <!--android:textColor="@color/text_color1" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

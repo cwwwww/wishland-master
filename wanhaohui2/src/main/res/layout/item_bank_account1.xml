@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/ll_bank_type_shape0"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_bank_type"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:failureImage="@drawable/error"
+            app:failureImageScaleType="centerInside"
+            app:placeholderImage="@drawable/default_img"
+            app:progressBarAutoRotateInterval="1500"
+            app:progressBarImage="@drawable/loading"
+            app:progressBarImageScaleType="centerInside"
+            app:retryImage="@drawable/reload"
+            app:retryImageScaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="包商银行"
+            android:textColor="@color/color_red"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

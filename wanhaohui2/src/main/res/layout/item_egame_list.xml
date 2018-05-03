@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:id="@+id/fl_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_e_game"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:actualImageScaleType="fitXY"
+            app:failureImage="@drawable/error"
+            app:failureImageScaleType="centerInside"
+            app:placeholderImage="@drawable/default_img3"
+            app:placeholderImageScaleType="fitXY"
+            app:progressBarAutoRotateInterval="1500"
+            app:progressBarImage="@drawable/loading"
+            app:progressBarImageScaleType="centerInside"
+            app:retryImage="@drawable/reload"
+            app:retryImageScaleType="centerInside" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PT黑暗的城市"
+            android:textColor="@color/text_color5"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_collect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="right">
+
+            <CheckBox
+                android:id="@+id/cb_collect"
+                android:layout_width="40px"
+                android:layout_height="35px"
+                android:background="@drawable/rb_collect_selector"
+                android:button="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+        <!--<CheckBox-->
+        <!--android:id="@+id/cb_collect"-->
+        <!--android:layout_width="40px"-->
+        <!--android:layout_height="35px"-->
+        <!--android:background="@drawable/rb_collect_selector"-->
+        <!--android:button="@null" />-->
+    </LinearLayout>
+</LinearLayout><!--<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="10px"--><!--android:layout_marginLeft="10px"--><!--android:layout_marginRight="10px"--><!--android:layout_marginTop="10px"--><!--android:background="@color/white"--><!--android:orientation="horizontal">-->
+
+    <!--<com.facebook.drawee.view.SimpleDraweeView--><!--android:id="@+id/sdv_e_game"--><!--android:layout_width="300px"--><!--android:layout_height="300px"--><!--android:layout_centerInParent="true"--><!--android:layout_margin="20px"--><!--app:actualImageScaleType="fitXY"--><!--app:failureImage="@drawable/error"--><!--app:failureImageScaleType="centerInside"--><!--app:placeholderImage="@drawable/default_img"--><!--app:placeholderImageScaleType="fitXY"--><!--app:progressBarAutoRotateInterval="1500"--><!--app:progressBarImage="@drawable/loading"--><!--app:progressBarImageScaleType="centerInside"--><!--app:retryImage="@drawable/reload"--><!--app:retryImageScaleType="centerInside" />-->
+
+
+    <!--<android.support.percent.PercentRelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_marginBottom="20px"--><!--android:layout_marginRight="20px"--><!--android:layout_marginTop="20px">-->
+
+
+    <!--<FrameLayout--><!--android:id="@+id/percent_frameone"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:layout_heightPercent="70%"--><!--app:layout_widthPercent="100%">-->
+
+    <!--<CheckBox--><!--android:id="@+id/cb_collect"--><!--android:layout_width="40px"--><!--android:layout_height="40px"--><!--android:layout_gravity="right"--><!--android:layout_margin="5dp"--><!--android:background="@drawable/rb_collect_selector"--><!--android:button="@null" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_name"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_vertical"--><!--android:text="酒吧和纹条"--><!--android:textColor="@color/black"--><!--android:textSize="33px" />--><!--</FrameLayout>-->
+
+    <!--<FrameLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_below="@+id/percent_frameone"--><!--app:layout_heightPercent="30%"--><!--app:layout_widthPercent="100%">-->
+
+    <!--<Button--><!--android:id="@+id/btn_begin"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:background="@drawable/sixspaces_list_item_shape"--><!--android:text="立即开始"--><!--android:textColor="@color/white"--><!--android:textSize="33px" />-->
+
+    <!--</FrameLayout>-->
+
+    <!--</android.support.percent.PercentRelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</com.zhy.autolayout.AutoFrameLayout>-->

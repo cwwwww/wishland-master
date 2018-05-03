@@ -1,0 +1,198 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+// Create a variable called keystorePropertiesFile, and initialize it to your
+// keystore.properties file, in the rootProject folder.
+
+def keystorePropertiesFile = project.file("keyStore.properties")
+//def keystorePropertiesFile = rootProject.file("keyStore.properties")
+
+// Initialize a new Properties() object called keystoreProperties.
+def KSP = new Properties()
+// Load your keystore.properties file into the keystoreProperties object.
+KSP.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+    defaultConfig {
+        applicationId "com.wishland.www.wanhaohui2"
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+//    signingConfigs {
+//        Wishland_XWHH {
+//            keyAlias KSP['platform_XWHH_keyAlias']
+//            keyPassword KSP['platform_XWHH_keyPassword']
+//            storeFile file(KSP['platform_XWHH_storeFile'])
+//            storePassword KSP['platform_XWHH_storePassword']
+//        }
+//    }
+
+    signingConfigs {
+        Wishland_XWHH_m {
+            keyAlias 'xwhh'
+            keyPassword '321456'
+            storeFile file('E:/02Android/文件区/packKey/新万豪会/xwhhkey.jks')
+            storePassword '321456'
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Wishland_XWHH_m
+        }
+        debug {
+            debuggable true
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    www.whh7788.com,www.whh003.com,www.whh9977.com,whh3355.com
+    productFlavors {
+        platform_whh2 {
+            applicationId "com.wishland.www.wanhaohui2"
+            versionCode 116
+            versionName "1.1.6"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME       : applicationId,
+                    AppName             : "万濠会",
+                    ICon                : "@mipmap/app_logo",
+                    UMENG_CHANNEL_VALUE : "XWHH",
+                    UMENG_APPKEY        : "5a1e735cf29d9856f200003e",
+                    UMENG_MESSAGE_SECRET: "90f1c26e2d087e81070e35eeca4be68c"]
+
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "www.197790.com")
+            resValue("string", "AliUrlsPool", "www.197790.com,www.207723.com,www.209330.com")
+//            resValue("string", "AliUrlsPool", "www.whh89.com,www.207723.com,www.whh3377.com,www.209330.com,www.whh003.com,www.google.com")
+            resValue("string", "DomainCode", "whh")
+            resValue("string", "VersionCode", "1eb15ef31e446b10fa4809ea31a237b7")
+            resValue("string", "AppName", "万濠会")
+            resValue("string", "AppStyle", "type1")
+            resValue("string", "DNS_ACCOUNT_ID", "117278")
+            resValue("string", "UMENG_CHANNEL_VALUE", "XWHH")
+            resValue("string", "UMENG_APPKEY", "5a1e735cf29d9856f200003e")
+            resValue("string", "UMENG_MESSAGE_SECRET", "90f1c26e2d087e81070e35eeca4be68c")
+            resValue("string", "UPDATE_URL", "https://tpfw.083075.com/system/getAppLastChange")
+            resValue("string", "UPDATE_Info", "1. 优化域名速度")
+            resValue("string", "DNS_ACCOUNT_ID", "117278")
+            signingConfig signingConfigs.Wishland_XWHH_m
+        }
+
+        platform_jfh {
+            applicationId "com.jinfenghuang.www"
+            versionCode 103
+            versionName "1.0.3"
+
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME      : applicationId,
+                    AppName            : "金凤凰",
+                    ICon               : "@mipmap/app_logo",
+                    UMENG_CHANNEL_VALUE: name]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "www.jfh70.com")
+            resValue("string", "DomainCode", "jfh")
+            resValue("string", "VersionCode", "5091a1747a3e8b5b650214ae056c82e0")
+            resValue("string", "AppName", "金凤凰")
+            resValue("string", "AppStyle", "type2")
+            // signingConfig signingConfigs.GameLayout_CN
+        }
+    }
+    buildToolsVersion '26.0.2'
+}
+
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
+    //阿里云
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+    }
+    //recyclverView的item动画
+    maven {
+        url "https://maven.google.com"
+    }
+    maven {
+        url "https://download.01.org/crosswalk/releases/crosswalk-lite/android/maven2/"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+    /***
+     * CROSS_WALK 取代原生WEBVIEW方案
+     * 暂不使用
+     */
+//    compile project(':crosswalkwebview')
+    compile project(':PushSDK')
+
+    Map<String, String> dep = rootProject.ext.dependencies
+
+    compile dep.kotlin
+    compile dep.kotlin_reflect
+
+    compile dep.android_design
+    compile dep.android_appcompat
+    compile dep.android_cardView
+    compile dep.android_recyclerView
+
+    compile dep.glide
+    compile dep.glideForImage
+    compile dep.gson
+    compile dep.butterknife
+    annotationProcessor dep.butterknife_compiler
+    compile dep.flycoTabLayout
+    compile dep.materialDialogs
+    compile dep.eventBus
+    compile dep.swipeBack
+    compile dep.analytics
+    compile dep.cockroach
+    compile dep.test_Junit
+
+    compile dep.retrofit
+    compile dep.retrofit_gson
+    compile dep.retrofit_rxjava
+    compile dep.reactivex_rxandroid
+
+    compile dep.okgo
+    compile dep.okio
+    compile dep.okHttp3
+    compile dep.okhttp3_logging
+    compile dep.okhttp3_urlconnection
+
+    compile dep.fresco
+    compile dep.fresco_animated
+    compile dep.fresco_imagepipeline
+
+    compile dep.time_picker
+    compile dep.switch_button
+    compile dep.multidex
+    compile dep.BaseAdapter
+    compile dep.recyclerview_animators
+    compile dep.flex_slider
+
+    compile dep.autolayout
+
+
+    compile dep.permissionsdispatcher
+    annotationProcessor dep.permissionsdispatcher_processor
+
+
+}

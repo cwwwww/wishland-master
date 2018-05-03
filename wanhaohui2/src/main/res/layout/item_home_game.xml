@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_game"-->
+    <!--android:layout_width="100px"-->
+    <!--android:layout_height="100px"-->
+    <!--android:layout_marginTop="5px"-->
+    <!--android:src="@drawable/game_test" />-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_game"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27px"
+        app:actualImageScaleType="fitCenter"
+        app:failureImage="@drawable/error"
+        app:failureImageScaleType="centerInside"
+        app:placeholderImage="@drawable/default_img"
+        app:placeholderImageScaleType="fitXY"
+        app:progressBarAutoRotateInterval="1500"
+        app:progressBarImage="@drawable/loading"
+        app:progressBarImageScaleType="centerInside"
+        app:retryImage="@drawable/reload"
+        app:retryImageScaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:text="真人视讯"
+        android:textColor="@color/text_color1" />
+</LinearLayout>
