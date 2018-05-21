@@ -58,8 +58,7 @@
             android:name=".DetailsHtmlPageActivityNew"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="WebView"
-            android:launchMode="singleTop"
-            >
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="com.whh.www.html" />
                 <category android:name="android.intent.category.DEFAULT" />
