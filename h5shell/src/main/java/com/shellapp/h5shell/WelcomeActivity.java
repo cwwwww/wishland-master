@@ -56,7 +56,7 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //判断是否有网络
-        if (!JudgeNewWorkUtil.isNetworkAvalible(this)) {
+        if (!JudgeNewWorkUtil.isNetworkAvailable(this)) {
             setContentView(R.layout.view_nonetwork);
             ToastUtil.showUI(this, "网络异常,请检查设置！");
             return;
@@ -108,7 +108,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 handler.sendMessage(message);
             }
         };
-        timer.schedule(timerTask, 0, 100);
+        timer.schedule(timerTask, 0, 1000);
     }
 
     @Override

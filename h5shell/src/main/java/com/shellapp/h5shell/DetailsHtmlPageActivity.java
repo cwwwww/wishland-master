@@ -64,15 +64,10 @@ public class DetailsHtmlPageActivity extends Activity {
     private WebView webview;
     private ProgressBar pb;
     private Map<Integer, Integer> index = new HashMap<>();
-    private PopupWindow popupWindow;
     private WindowManager wm;
     private FrameLayout fl;
     private String imgUrl = "";
 
-    //    private TextView tvTitle;
-//    private ImageButton btnBack;
-//
-//    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,9 +78,6 @@ public class DetailsHtmlPageActivity extends Activity {
         webview = (WebView) findViewById(R.id.webview);
         pb = (ProgressBar) findViewById(R.id.pb);
         fl = (FrameLayout) findViewById(R.id.fl_main_view);
-//        tvTitle = (TextView) findViewById(R.id.tv_title);
-//        btnBack = (ImageButton) findViewById(R.id.btn_back);
-
 
         initStatusBar();
         init(webview);
@@ -360,13 +352,11 @@ public class DetailsHtmlPageActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-//
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-//
     }
 
 

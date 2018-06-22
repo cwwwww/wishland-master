@@ -25,7 +25,7 @@ public class JudgeNewWorkUtil {
      * @param context 上下文
      * @return false 表示没有网络 true 表示有网络
      */
-    public static boolean isNetworkAvalible(Context context) {
+    public static boolean isNetworkAvailable(Context context) {
         // 获得网络状态管理器
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 
@@ -65,7 +65,7 @@ public class JudgeNewWorkUtil {
 
     // 如果没有网络，则弹出网络设置对话框
     public static void checkNetwork(final Activity activity) {
-        if (!JudgeNewWorkUtil.isNetworkAvalible(activity)) {
+        if (!JudgeNewWorkUtil.isNetworkAvailable(activity)) {
             TextView msg = new TextView(activity);
             msg.setText("当前没有可以使用的网络，请设置网络！");
             new AlertDialog.Builder(activity).setTitle("网络状态提示").setView(msg).setPositiveButton("确定", new DialogInterface.OnClickListener() {

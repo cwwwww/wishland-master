@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.shellapp.h5shell.DetailsHtmlPageActivityNew;
+import com.shellapp.h5shell.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,6 +29,7 @@ public class MyReceiver extends BroadcastReceiver {
         if (JPushInterface.ACTION_NOTIFICATION_OPENED.equals(intent.getAction())) {
             //打开自定义的Activity
             Intent i = new Intent(context, DetailsHtmlPageActivityNew.class);
+            i.putExtra("url", context.getString(R.string.AliUrl));
             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             i.putExtras(bundle);
             context.startActivity(i);

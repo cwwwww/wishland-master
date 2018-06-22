@@ -29,7 +29,6 @@ public class MyApplication extends Application {
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
         setStyleCustom();
-
     }
 
     private void setStyleCustom() {

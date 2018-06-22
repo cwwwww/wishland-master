@@ -544,7 +544,8 @@ public class DetailsHtmlPageActivityNew extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_CHOOSER_RESULT_CODE) {
-            if (null == uploadMessage && null == uploadMessageAboveL) return;
+            if (null == uploadMessage && null == uploadMessageAboveL)
+                return;
             Uri result = data == null || resultCode != RESULT_OK ? null : data.getData();
             if (uploadMessageAboveL != null) {
                 onActivityResultAboveL(requestCode, resultCode, data);

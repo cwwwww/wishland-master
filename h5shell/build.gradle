@@ -250,9 +250,9 @@ android {
                     ICon         : "@mipmap/app_logo"]
             resValue("string", "MainApplicationIDPath", applicationId)
             resValue("string", "AliUrl", "http://lyc11.vip")
-            resValue("string", "AppName", "乐盈")
+            resValue("string", "AppName", "乐盈彩票")
             resValue("string", "updateURL", "http://38.27.96.183/ly/appUpdate.json")
-            resValue("string", "AppStyle", "type1")
+            resValue("string", "AppStyle", "type2")
         }
 
         platform_kc {
@@ -268,15 +268,15 @@ android {
                     ICon         : "@mipmap/app_logo"]
             resValue("string", "MainApplicationIDPath", applicationId)
             resValue("string", "AliUrl", "http://66kcw.com")
-            resValue("string", "AppName", "快彩")
+            resValue("string", "AppName", "快彩网")
             resValue("string", "updateURL", "http://38.27.96.183/kc/appUpdate.json")
-            resValue("string", "AppStyle", "type1")
+            resValue("string", "AppStyle", "type2")
         }
 
         platform_yf {
             applicationId "com.yf.www"
-            versionCode 10
-            versionName "1.0.4"
+            versionCode 105
+            versionName "1.0.5"
             multiDexEnabled true
             testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
             manifestPlaceholders = [
@@ -288,8 +288,9 @@ android {
             resValue("string", "AliUrl", "http://22yfa.com")
             resValue("string", "AppName", "盈发彩票")
             resValue("string", "updateURL", "http://38.27.96.183/yf/appUpdate.json")
-            resValue("string", "AppStyle", "type1")
+            resValue("string", "AppStyle", "type2")
         }
+
         platform_scp {
             applicationId "com.scp.www"
             versionCode 104
@@ -305,7 +306,7 @@ android {
             resValue("string", "AliUrl", "http://360cp123.com/mobile/v3/")
             resValue("string", "AppName", "360彩票")
             resValue("string", "updateURL", "http://38.27.96.183/scp/appUpdate.json")
-            resValue("string", "AppStyle", "type1")
+            resValue("string", "AppStyle", "type2")
         }
 
         platform_cai38 {
@@ -539,6 +540,186 @@ android {
             resValue("string", "AliUrl", "http://www.tz159.com/")
             resValue("string", "AppName", "鼎盛宝")
             resValue("string", "updateURL", "http://38.27.96.183/dsb/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_xpjylc {
+            applicationId "com.xpjylc.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "3f15b831428bbfe4e8bc8b86",
+                    AppName      : "新葡京娱乐城",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "https://7567pj.com/")
+            resValue("string", "AppName", "新葡京娱乐城")
+            resValue("string", "updateURL", "http://38.27.96.183/xpjylc/appUpdate.json")
+            resValue("string", "AppStyle", "type1")
+        }
+
+        platform_gxcp {
+            applicationId "com.gxcp.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "7d1b3db70ed90f6fd7cd8bc0",
+                    AppName      : "共享彩票",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://m.gx2234.com/#/index")
+            resValue("string", "AppName", "共享彩票")
+            resValue("string", "updateURL", "http://38.27.96.183/gxcp/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_bwc {
+            applicationId "com.bwc.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "273d61498766abc6bb9bd556",
+                    AppName      : "百万彩",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://bwc55.com/mobile/v3/")
+            resValue("string", "AppName", "百万彩")
+            resValue("string", "updateURL", "http://38.27.96.183/bwc/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_yfcp {
+            applicationId "com.yfcp.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "2ad7f952c97b35f3cf8afc00",
+                    AppName      : "易发彩票",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://m.yifaapp88.net/#/index")
+            resValue("string", "AppName", "易发彩票")
+            resValue("string", "updateURL", "http://38.27.96.183/yfcp/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_wpcp {
+            applicationId "com.wpcp.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "9e5f6652764f791adcdfaf05",
+                    AppName      : "王牌彩票",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://m.605999.com/index")
+            resValue("string", "AppName", "王牌彩票")
+            resValue("string", "updateURL", "http://38.27.96.183/wpcp/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_nfcp {
+            applicationId "com.nfcp.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "fe3bf65ee739897472557c3e",
+                    AppName      : "南方彩票",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://m.nfcpwapp.com/#/index")
+            resValue("string", "AppName", "南方彩票")
+            resValue("string", "updateURL", "http://38.27.96.183/wpcp/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_zzcp {
+            applicationId "com.zzcp.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "6da3a1b20f16e8fb3362e4fc",
+                    AppName      : "金钻彩票",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://m.jz6686.com/index")
+            resValue("string", "AppName", "金钻彩票")
+            resValue("string", "updateURL", "http://38.27.96.183/zzcp/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_zfcp {
+            applicationId "com.zfcp.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "060ac1b86111bd01c2ae8e0a",
+                    AppName      : "中福彩票",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://m.zf88app.com/#/index")
+            resValue("string", "AppName", "中福彩票")
+            resValue("string", "updateURL", "http://38.27.96.183/zfcp/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_gcw {
+            applicationId "com.gcw.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "b71f20da81b457e75639da4d",
+                    AppName      : "冠彩网",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://m.guanc66.com/#/index")
+            resValue("string", "AppName", "冠彩网")
+            resValue("string", "updateURL", "http://38.27.96.183/gcw/appUpdate.json")
+            resValue("string", "AppStyle", "type2")
+        }
+
+        platform_fcks {
+            applicationId "com.fcks.www"
+            versionCode 105
+            versionName "1.0.5"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "1d69ca839d7f14476dba0533",
+                    AppName      : "福彩快三",
+                    ICon         : "@mipmap/app_logo"]
+            resValue("string", "MainApplicationIDPath", applicationId)
+            resValue("string", "AliUrl", "http://281118.com/mobile/v3/")
+            resValue("string", "AppName", "福彩快三")
+            resValue("string", "updateURL", "http://38.27.96.183/fcks/appUpdate.json")
             resValue("string", "AppStyle", "type2")
         }
 
