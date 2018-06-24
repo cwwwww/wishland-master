@@ -9,6 +9,7 @@ import android.util.Log;
 
 import com.shellapp.h5shell.DetailsHtmlPageActivityNew;
 import com.shellapp.h5shell.R;
+import com.shellapp.h5shell.SystemUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,12 +28,23 @@ public class MyReceiver extends BroadcastReceiver {
         Bundle bundle = intent.getExtras();
         Log.e("cww", "[MyReceiver] onReceive - " + intent.getAction() + ", extras: " + printBundle(bundle));
         if (JPushInterface.ACTION_NOTIFICATION_OPENED.equals(intent.getAction())) {
-            //打开自定义的Activity
-            Intent i = new Intent(context, DetailsHtmlPageActivityNew.class);
-            i.putExtra("url", context.getString(R.string.AliUrl));
-            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            i.putExtras(bundle);
-            context.startActivity(i);
+            //先判断应用是否已经被杀死
+            if (SystemUtil.isAppaLive(context, context.getPackageName())) {
+                //打开自定义的Activity
+                Intent i = new Intent(context, DetailsHtmlPageActivityNew.class);
+                i.putExtra("url", context.getString(R.string.AliUrl));
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                i.putExtras(bundle);
+                context.startActivity(i);
+            } else {
+                Intent launchIntent = context.getPackageManager().
+                        getLaunchIntentForPackage(context.getPackageName());
+                launchIntent.setFlags(
+                        Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+                launchIntent.putExtra("url", context.getString(R.string.AliUrl));
+                context.startActivity(launchIntent);
+            }
+
         }
     }
 

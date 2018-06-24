@@ -9,14 +9,14 @@ import java.util.Stack;
  * Created by admin on 2017/10/15.
  */
 
-public class ActivityManager {
+public class MyActivityManager {
 
-    private ActivityManager() {
+    private MyActivityManager() {
     }
 
-    private static ActivityManager activityManager = new ActivityManager();
+    private static MyActivityManager activityManager = new MyActivityManager();
 
-    public static ActivityManager getActivityManager() {
+    public static MyActivityManager getActivityManager() {
         return activityManager;
     }
 
