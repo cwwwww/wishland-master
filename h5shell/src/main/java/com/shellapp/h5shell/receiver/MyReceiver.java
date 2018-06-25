@@ -29,7 +29,7 @@ public class MyReceiver extends BroadcastReceiver {
         Log.e("cww", "[MyReceiver] onReceive - " + intent.getAction() + ", extras: " + printBundle(bundle));
         if (JPushInterface.ACTION_NOTIFICATION_OPENED.equals(intent.getAction())) {
             //先判断应用是否已经被杀死
-            if (SystemUtil.isAppaLive(context, context.getPackageName())) {
+            if (SystemUtil.isApiaLive(context, context.getPackageName())) {
                 //打开自定义的Activity
                 Intent i = new Intent(context, DetailsHtmlPageActivityNew.class);
                 i.putExtra("url", context.getString(R.string.AliUrl));
@@ -44,7 +44,6 @@ public class MyReceiver extends BroadcastReceiver {
                 launchIntent.putExtra("url", context.getString(R.string.AliUrl));
                 context.startActivity(launchIntent);
             }
-
         }
     }
 

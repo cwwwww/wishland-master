@@ -10,7 +10,7 @@ import java.util.List;
  */
 
 public class SystemUtil {
-    public static boolean isAppaLive(Context context, String str) {
+    public static boolean isApiaLive(Context context, String str) {
         ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         List<ActivityManager.RunningTaskInfo> list = am.getRunningTasks(100);
         boolean isAppRunning = false;

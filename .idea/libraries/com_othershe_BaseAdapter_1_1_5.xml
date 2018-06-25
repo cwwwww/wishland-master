@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.othershe:BaseAdapter-1.1.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/BaseAdapter-1.1.5.aar/2cbec732b2cb4371704d17c939bc4ed7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/BaseAdapter-1.1.5.aar/2cbec732b2cb4371704d17c939bc4ed7/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.othershe/BaseAdapter/1.1.5/6a2e3be9bd41ca62138360131bba33e18c8931a9/BaseAdapter-1.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

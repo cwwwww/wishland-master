@@ -1,1 +1,1 @@
-include  ':h5shell'
+include  ':h5shell',':PushSDK',':wanhaohui2'

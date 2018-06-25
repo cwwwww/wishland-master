@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/h5shell/h5shell.iml" filepath="$PROJECT_DIR$/h5shell/h5shell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wanhaohui2/wanhaohui2.iml" filepath="$PROJECT_DIR$/wanhaohui2/wanhaohui2.iml" />
       <module fileurl="file://$PROJECT_DIR$/wishland-master.iml" filepath="$PROJECT_DIR$/wishland-master.iml" />
     </modules>
   </component>
