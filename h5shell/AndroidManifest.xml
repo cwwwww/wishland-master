@@ -52,16 +52,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".DetailsHtmlPageActivityNew"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="WebView"
-            android:launchMode="singleTop">
-            <intent-filter>
-                <action android:name="com.whh.www.html" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+            android:launchMode="singleTop" />
+
+
+        <activity
+            android:name=".MainActivityWithGPS"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="WebView"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MainActivityWithGPS2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="WebView"
+            android:launchMode="singleTop" />
+
 
         <meta-data
             android:name="channeltest"
@@ -124,6 +133,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
@@ -143,8 +153,8 @@
 
         <receiver
             android:name=".receiver.MyReceiver"
-            android:exported="false"
-            android:enabled="true">
+            android:enabled="true"
+            android:exported="false">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
                 <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->

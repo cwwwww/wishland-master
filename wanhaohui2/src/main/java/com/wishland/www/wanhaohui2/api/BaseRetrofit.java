@@ -1,19 +1,15 @@
 package com.wishland.www.wanhaohui2.api;
 
-import com.wishland.www.wanhaohui2.utils.HttpsUtils;
+
+
+import com.lzy.okgo.https.HttpsUtils;
 
 import java.net.CookieManager;
 import java.net.CookiePolicy;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeUnit;
 
 import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
-import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
 
 import okhttp3.JavaNetCookieJar;
 import okhttp3.OkHttpClient;
@@ -135,12 +131,12 @@ public class BaseRetrofit {
 
 //        builder.sslSocketFactory(OkHttpClientManager.getInstance().getSocketFactory());
 
-        if (OkHttpClientManager.getInstance().getSocketFactory() != null) {
-
-        } else {
-            HttpsUtils.SSLParams sslParams1 = HttpsUtils.getSslSocketFactory();
-            builder.sslSocketFactory(sslParams1.sSLSocketFactory, sslParams1.trustManager);
-        }
+//        if (OkHttpClientManager.getInstance().getSocketFactory() != null) {
+//
+//        } else {
+//            HttpsUtils.SSLParams sslParams1 = HttpsUtils.getSslSocketFactory();
+//            builder.sslSocketFactory(sslParams1.sSLSocketFactory, sslParams1.trustManager);
+//        }
 
         /**
          *

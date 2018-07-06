@@ -140,9 +140,9 @@ public class DetailsHtmlPageActivityNew extends Activity {
         settings.setLoadWithOverviewMode(true);
 //        settings.setDisplayZoomControls(true);
         settings.setDomStorageEnabled(true);
-//        settings.setDisplayZoomControls(true);
         settings.setDatabaseEnabled(true);
         settings.setAllowFileAccess(true);
+        settings.setAppCacheEnabled(true);
         //缩放开关，仅仅支持双击缩放
         settings.setSupportZoom(true);
         //设置是否可缩放，会出现缩放工具
@@ -187,6 +187,13 @@ public class DetailsHtmlPageActivityNew extends Activity {
             }
         });
         webView.setWebChromeClient(new WebChromeClient() {
+
+            @Override
+            public void onReceivedTitle(WebView view, String title) {
+                super.onReceivedTitle(view, title);
+                setTitle(title);
+            }
+
             @Override
             public void onProgressChanged(WebView view, int progress) {
                 pb.setVisibility(View.VISIBLE);
@@ -199,10 +206,25 @@ public class DetailsHtmlPageActivityNew extends Activity {
             }
 
             @Override
-            public boolean onJsAlert(WebView view, String url, String message,
+            public boolean onJsAlert(WebView view, String url, final String message,
                                      JsResult result) {
                 //加这段可以证webview中的alert弹出来
-                return super.onJsAlert(view, url, message, result);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        new AlertDialog.Builder(DetailsHtmlPageActivityNew.this)
+                                .setTitle("提示")
+                                .setMessage(message)
+                                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        //webView.reload();//重写刷新页面
+                                    }
+                                }).show();
+                    }
+                });
+                result.confirm();//这里必须调用，否则页面会阻塞造成假死
+                return true;
             }
 
 
@@ -231,8 +253,6 @@ public class DetailsHtmlPageActivityNew extends Activity {
                 openImageChooserActivity();
                 return true;
             }
-
-
         });
         CookieManager cookieManager = CookieManager.getInstance();
         if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
@@ -341,6 +361,7 @@ public class DetailsHtmlPageActivityNew extends Activity {
                             || url.startsWith("tel://")//电话
                             || url.startsWith("dianping://")//大众点评
                             || url.startsWith("mqqapi://")//QQ钱包
+                            || url.startsWith("alipayqr://") //支付宝
                         //其他自定义的scheme
                             ) {
                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));

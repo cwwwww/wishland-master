@@ -3,10 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <FrameLayout
         android:id="@+id/fl_main_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <com.shellapp.h5shell.customview.MyWebView
             android:id="@+id/webview"
@@ -22,5 +24,7 @@
             android:progress="0"
             android:visibility="gone" />
     </FrameLayout>
+
+
 </android.support.v4.widget.SwipeRefreshLayout>
 

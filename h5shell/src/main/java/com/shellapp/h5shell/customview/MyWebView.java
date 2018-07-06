@@ -28,11 +28,14 @@ public class MyWebView extends WebView {
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
-        if (this.getScrollY() == 0) {
-            swipeRefreshLayout.setEnabled(true);
-        } else {
-            swipeRefreshLayout.setEnabled(false);
+        if (swipeRefreshLayout != null) {
+            if (this.getScrollY() == 0) {
+                swipeRefreshLayout.setEnabled(true);
+            } else {
+                swipeRefreshLayout.setEnabled(false);
+            }
         }
+
     }
 
     public void setSwipeRefreshLayout(SwipeRefreshLayout swipeRefreshLayout) {
@@ -41,10 +44,10 @@ public class MyWebView extends WebView {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction()){
+        switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                if(this.getScrollY() <= 0)
-                    this.scrollTo(0,1);
+                if (this.getScrollY() <= 0)
+                    this.scrollTo(0, 1);
                 break;
             case MotionEvent.ACTION_UP:
                 break;

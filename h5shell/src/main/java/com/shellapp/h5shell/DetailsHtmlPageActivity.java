@@ -239,7 +239,6 @@ public class DetailsHtmlPageActivity extends Activity {
         }
         clearCookies(this);
         System.exit(0);
-
     }
 
     private WebViewClient setWebViewClient() {

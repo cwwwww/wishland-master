@@ -43,7 +43,9 @@ public class WelcomeActivity extends AppCompatActivity {
                             timerTask.cancel();
                         }
                         baseUrl = getString(R.string.AliUrl);
-                        Intent intent = new Intent(WelcomeActivity.this, DetailsHtmlPageActivityNew.class);
+//                        Intent intent = new Intent(WelcomeActivity.this, DetailsHtmlPageActivityNew.class);
+//                        Intent intent = new Intent(WelcomeActivity.this, MainActivityWithGPS.class);
+                        Intent intent = new Intent(WelcomeActivity.this, MainActivityWithGPS2.class);
                         intent.putExtra("url", baseUrl);
                         startActivity(intent);
                         finish();
