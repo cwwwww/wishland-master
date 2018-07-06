@@ -502,7 +502,7 @@ public class MainActivityWithGPS extends Activity {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                                             try {
-                                                Uri uri = Uri.parse(appUpdate.getUpdateurl());
+                                                Uri uri = Uri.parse(appUpdate.getUpdateUrl());
                                                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                                                 startActivity(intent);
                                             } catch (Exception e) {

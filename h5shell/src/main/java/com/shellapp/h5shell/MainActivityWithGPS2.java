@@ -20,7 +20,6 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -540,7 +539,7 @@ public class MainActivityWithGPS2 extends Activity {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                                             try {
-                                                Uri uri = Uri.parse(appUpdate.getUpdateurl());
+                                                Uri uri = Uri.parse(appUpdate.getUpdateUrl());
                                                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                                                 startActivity(intent);
                                             } catch (Exception e) {

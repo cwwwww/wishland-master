@@ -8,37 +8,37 @@ public class AppUpdateBean {
 
 
     /**
-     * appname : xpj1.0
-     * vsersionCode : 102
+     * appName : xpj1.0
+     * versionCode : 102
      * versionName : 1.0.2
      * versionType : 3
      * serverVersion : http://38.27.96.183/appUpdate.json
-     * updateurl : http://38.27.96.183/xpj.apk
-     * upgradeinfo : xpj version control
+     * updateUrl : http://38.27.96.183/xpj.apk
+     * upgradeInfo : xpj version control
      */
 
-    private String appname;
-    private String vsersionCode;
+    private String appName;
+    private String versionCode;
     private String versionName;
     private int versionType;
     private String serverVersion;
-    private String updateurl;
-    private String upgradeinfo;
+    private String updateUrl;
+    private String upgradeInfo;
 
-    public String getAppname() {
-        return appname;
+    public String getAppName() {
+        return appName;
     }
 
-    public void setAppname(String appname) {
-        this.appname = appname;
+    public void setAppName(String appName) {
+        this.appName = appName;
     }
 
-    public String getVsersionCode() {
-        return vsersionCode;
+    public String getVersionCode() {
+        return versionCode;
     }
 
-    public void setVsersionCode(String vsersionCode) {
-        this.vsersionCode = vsersionCode;
+    public void setVersionCode(String versionCode) {
+        this.versionCode = versionCode;
     }
 
     public String getVersionName() {
@@ -65,19 +65,19 @@ public class AppUpdateBean {
         this.serverVersion = serverVersion;
     }
 
-    public String getUpdateurl() {
-        return updateurl;
+    public String getUpdateUrl() {
+        return updateUrl;
     }
 
-    public void setUpdateurl(String updateurl) {
-        this.updateurl = updateurl;
+    public void setUpdateUrl(String updateUrl) {
+        this.updateUrl = updateUrl;
     }
 
-    public String getUpgradeinfo() {
-        return upgradeinfo;
+    public String getUpgradeInfo() {
+        return upgradeInfo;
     }
 
-    public void setUpgradeinfo(String upgradeinfo) {
-        this.upgradeinfo = upgradeinfo;
+    public void setUpgradeInfo(String upgradeInfo) {
+        this.upgradeInfo = upgradeInfo;
     }
 }
