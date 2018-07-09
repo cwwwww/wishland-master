@@ -8,81 +8,81 @@
     </facet>
     <facet type="android" name="Android">
       <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="platform_xpjDebug" />
-        <option name="ASSEMBLE_TASK_NAME" value="assemblePlatform_xpjDebug" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compilePlatform_xpjDebugSources" />
+        <option name="SELECTED_BUILD_VARIANT" value="platform_bzcDebug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assemblePlatform_bzcDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compilePlatform_bzcDebugSources" />
         <afterSyncTasks>
-          <task>generatePlatform_xpjDebugSources</task>
+          <task>generatePlatform_bzcDebugSources</task>
         </afterSyncTasks>
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/platform_xpj/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/platform_bzc/res" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
-    <output url="file://$MODULE_DIR$/build/intermediates/classes/platform_xpj/debug" />
-    <output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/platform_xpj/debug" />
+    <output url="file://$MODULE_DIR$/build/intermediates/classes/platform_bzc/debug" />
+    <output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/platform_bzc/debug" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/platform_xpj/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/platform_xpj/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/platform_xpj/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/platform_xpj/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/platform_xpj/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/platform_xpj/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/platform_xpj/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpjDebug/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpjDebug/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpjDebug/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpjDebug/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpjDebug/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpjDebug/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpjDebug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/platform_xpj/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/platform_xpj/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/platform_xpj/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/platform_xpj/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/platform_xpj/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/platform_xpj/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/platform_xpj/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpjDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpjDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpjDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpjDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpjDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpjDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpjDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/platform_xpj/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpjDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpjDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpjDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpjDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpjDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpjDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpjDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpj/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpj/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpj/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpj/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpj/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpj/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/platform_xpj/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpj/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpj/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpj/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpj/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpj/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpj/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_xpj/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpj/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpj/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpj/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpj/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpj/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpj/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_xpj/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/platform_bzc/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/platform_bzc/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/platform_bzc/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/platform_bzc/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/platform_bzc/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/platform_bzc/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/platform_bzc/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzcDebug/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzcDebug/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzcDebug/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzcDebug/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzcDebug/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzcDebug/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzcDebug/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/platform_bzc/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/platform_bzc/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/platform_bzc/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/platform_bzc/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/platform_bzc/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/platform_bzc/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/platform_bzc/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzcDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzcDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzcDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzcDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzcDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzcDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzcDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/platform_bzc/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzcDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzcDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzcDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzcDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzcDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzcDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzcDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzc/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzc/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzc/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzc/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzc/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzc/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/platform_bzc/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzc/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzc/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzc/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzc/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzc/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzc/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPlatform_bzc/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzc/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzc/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzc/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzc/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzc/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzc/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPlatform_bzc/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/assets" type="java-resource" />

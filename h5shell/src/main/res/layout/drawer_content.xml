@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="15dp"
-        android:src="@mipmap/app_icon1" />
+        android:src="@mipmap/app_icon" />
 
     <LinearLayout
         android:id="@+id/ll_goHome"

@@ -362,7 +362,7 @@ public class DetailsHtmlPageActivityNew extends Activity {
                             || url.startsWith("dianping://")//大众点评
                             || url.startsWith("mqqapi://")//QQ钱包
                             || url.startsWith("alipayqr://") //支付宝
-                        //其他自定义的scheme
+                            || url.startsWith("vipshop://")//其他自定义的scheme
                             ) {
                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                         startActivity(intent);
